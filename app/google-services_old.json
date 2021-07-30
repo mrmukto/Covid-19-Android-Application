@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "228529678650",
+    "firebase_url": "https://covid-19-eb313.firebaseio.com",
+    "project_id": "covid-19-eb313",
+    "storage_bucket": "covid-19-eb313.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:228529678650:android:b744d07025ee7692fe8803",
+        "android_client_info": {
+          "package_name": "com.shoutlab.covid"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "228529678650-gkqh4s2ndnkvhssdgbdakcv543m5l3hc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD7aY2xSrnLCdc4gkoNc_rPCpipawFgXDA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "228529678650-gkqh4s2ndnkvhssdgbdakcv543m5l3hc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

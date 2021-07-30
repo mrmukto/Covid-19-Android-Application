@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/root"
+    android:background="@color/WHITE"
+    tools:context=".QuarantineIsolationActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="90dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="হোম"
+                    android:textSize="23sp"
+                    android:textColor="@color/SS_Violet"
+                    android:fontFamily="@font/nunitosans_regular"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="23sp"
+                    android:paddingStart="5dp"
+                    android:text="কোয়ারেন্টাইন কি?"
+                    android:textColor="@color/SS_Violet"
+                    android:fontFamily="@font/nunitosans_extrabold"
+                    tools:ignore="RtlSymmetry" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="25sp"
+                android:paddingRight="25sp"
+                android:textColor="@color/SS_DarkBlue"
+                android:fontFamily="sans-serif-light"
+                android:textSize="16sp"
+                android:text="@string/quarantine_details"
+                android:lineSpacingExtra="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Source: coronacount.xyz"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:paddingTop="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="আইসোলেশন"
+                    android:textSize="23sp"
+                    android:textColor="@color/SS_Violet"
+                    android:fontFamily="@font/nunitosans_regular"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="23sp"
+                    android:paddingStart="5dp"
+                    android:text="কি?"
+                    android:textColor="@color/SS_Violet"
+                    android:fontFamily="@font/nunitosans_extrabold"
+                    tools:ignore="RtlSymmetry" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="25sp"
+                android:paddingRight="25sp"
+                android:textColor="@color/SS_DarkBlue"
+                android:fontFamily="sans-serif-light"
+                android:textSize="16sp"
+                android:text="@string/isolation_details"
+                android:lineSpacingExtra="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Source: coronacount.xyz"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:paddingTop="10dp"/>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <eightbitlab.com.blurview.BlurView
+        android:id="@+id/blurView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:outlineProvider="bounds"
+        app:blurOverlayColor="@color/overlayColor"
+        tools:targetApi="lollipop">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp">
+            <ImageView
+                android:id="@+id/back_button"
+                android:layout_width="22dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="25dp"
+                android:padding="5dp"
+                android:src="@drawable/back_button"
+                android:contentDescription="@string/todo"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="70dp"
+                android:layout_marginRight="70dp"
+                android:text="Quarantine and\nIsolation"
+                android:gravity="center"
+                android:fontFamily="@font/nunitosans_black"
+                android:textColor="@color/SS_DarkBlue"
+                android:textSize="22sp"/>
+        </RelativeLayout>
+    </eightbitlab.com.blurview.BlurView>
+</RelativeLayout>

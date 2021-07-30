@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/root"
+    android:background="@color/WHITE"
+    tools:context=".TestInfectionActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="80dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="23sp"
+                    android:text="সতর্কতা"
+                    android:textColor="@color/SS_DarkBlue"
+                    android:fontFamily="@font/nunitosans_extrabold"
+                    tools:ignore="RtlSymmetry" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/caution_message_bn"
+                android:paddingLeft="25dp"
+                android:paddingRight="25sp"
+                android:lineSpacingExtra="5dp"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="23sp"
+                android:layout_marginTop="40dp"
+                android:gravity="center"
+                android:text="আপনার বয়স"
+                android:textColor="@color/SS_DarkBlue"
+                android:fontFamily="@font/nunitosans_extrabold"
+                tools:ignore="RtlSymmetry" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+                <EditText
+                    android:id="@+id/userAge"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:layout_margin="5dp"
+                    android:fontFamily="@font/nunitosans_semibold"
+                    android:textSize="30sp"
+                    android:gravity="center"
+                    android:maxLength="3"
+                    android:padding="5dp"
+                    android:textColor="@color/SS_DarkBlue"
+                    android:background="@drawable/age_box"
+                    android:importantForAutofill="no"
+                    tools:ignore="LabelFor" />
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/testQuesRecycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"/>
+
+            <com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar
+                android:id="@+id/progressMeter"
+                android:layout_width="match_parent"
+                android:layout_height="6dp"
+                android:layout_margin="25dp"
+                app:rcProgress="10"
+                app:rcMax="100"
+                app:rcRadius="50dp"
+                app:rcReverse="false"
+                app:rcProgressColor="@color/SS_ProgressGreen"
+                app:rcBackgroundColor="@color/SS_ProgressBackground" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/checkResult"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/SS_Emergency"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="0dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginBottom="30dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="রেসাল্ট চেক করুন"
+                    android:fontFamily="sans-serif-black"
+                    android:textSize="18sp"
+                    android:textColor="#00CD98"
+                    android:gravity="center"
+                    android:padding="15dp"/>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <eightbitlab.com.blurview.BlurView
+        android:id="@+id/blurView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:outlineProvider="bounds"
+        app:blurOverlayColor="@color/overlayColor"
+        tools:targetApi="lollipop">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+            <ImageView
+                android:id="@+id/back_button"
+                android:layout_width="22dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="25dp"
+                android:padding="5dp"
+                android:src="@drawable/back_button"
+                android:contentDescription="@string/todo"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="80dp"
+                android:layout_marginRight="80dp"
+                android:text="Test Infection"
+                android:gravity="center"
+                android:fontFamily="@font/nunitosans_black"
+                android:textColor="@color/SS_DarkBlue"
+                android:textSize="22sp"/>
+        </RelativeLayout>
+    </eightbitlab.com.blurview.BlurView>
+</RelativeLayout>

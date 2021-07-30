@@ -1,0 +1,62 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">COVID-19</string>
+
+    <string name="google_maps_key">AIzaSyDM86LvawoonA9fPt_b_zvvzJbgHlKPTmE</string>
+    <string name="google_places_key" tools:ignore="TypographyDashes">AIzaSyAwXdG39CFUevkQBDOQojrFqSUBhe-PX1k</string>
+
+    <string name="covid_19">COVID-19</string>
+    <string name="back_button">Back Button</string>
+    <string name="checkbox">Checkbox</string>
+    <string name="next">Next</string>
+    <string name="who_logo">WHO Logo</string>
+    <string name="developer">Developer</string>
+    <string name="supported_by">Supported By</string>
+    <string name="contributor">Contributor</string>
+    <string name="contributor_list">Tridiv Roy\nAr Aminul Islam Shagor\nKaniz Fatema Nishat\nMd. Ahnaf Shariar\nMayeesha Mahbub</string>
+    <string name="md_rafat_hossain">Md. Rafat Hossain</string>
+    <string name="agreement"><![CDATA[By continuing, I confirm that I have read & agree to the Terms & Conditions and Privacy Policy]]></string>
+    <string name="agreement_bn">পরবর্তী পেইজে যাওয়ার আগে আমি নিশ্চিত হয়ে জানাচ্ছি যে আমি সবকিছু পড়েছি এবং উল্লেখিত শর্তাবলী এবং গোপনীয়তা নীতিতে সম্মতি প্রদান করছি।</string>
+    <string name="enter_mobile_number">Enter mobile number</string>
+    <string name="confirm_message">We will send verification code to </string>
+    <string name="confirm_message_bn">আমরা এই নাম্বারে ভেরিফিকেশন কোড পাঠাচ্ছি </string>
+    <string name="confirm">Confirm</string>
+    <string name="cancel">Cancel</string>
+    <string name="send_otp">Send OTP</string>
+    <string name="otp_verification">OTP Verification</string>
+    <string name="mobile_dummy">+8801704005054</string>
+    <string name="edit">Edit</string>
+    <string name="otp_details">Enter the 6-digit code sent to you at</string>
+    <string name="verify">Verify</string>
+    <string name="invalid_otp">Invalid code entered.</string>
+    <string name="resend_code">Resend Code</string>
+    <string name="resend_countdown">Resend code in</string>
+    <string name="create_profile">Create profile</string>
+    <string name="full_name">Full name</string>
+    <string name="address">Address (Optional)</string>
+    <string name="mobile_number">Mobile number</string>
+    <string name="register">Register</string>
+    <string name="star">*</string>
+    <string name="what_is_coronavirus">What is coronavirus?</string>
+    <string name="covid_details">Coronaviruses are a large family of viruses which may cause illness in animals or humans. In humans, several coronaviruses are known to cause respiratory infections. The most recently discovered coronavirus causes coronavirus disease COVID-19.</string>
+    <string name="you_should_seek_medical_attention">You should seek medical attention.</string>
+    <string name="warning">Warning</string>
+    <string name="you_should_take_preventive_measures_carefully">You should take preventive measures carefully.</string>
+
+    <string name="caution_message_bn">WHO এর সরবরাহকৃত তথ্য অনুযায়ী এখানে ফলাফল অনুমান করা হয়েছে। ফলাফল দেখে আতঙ্কিত হবেন না। আপনার উত্তর অনুযায়ী এটি একটি অনুমান মাত্র।</string>
+    <string name="todo">TODO</string>
+    <string name="news">News</string>
+    <string name="call_button">Call Button</string>
+    <string name="play_button">Play Button</string>
+    <string name="select_country">Select Country</string>
+    <string name="exit">Exit</string>
+    <string name="no_result_found">No result found!</string>
+    <string name="covid_article">Covid Article</string>
+    <string name="emergency_button">Emergency Button</string>
+    <string name="wash_hands_nfrequently">Wash hands\nfrequently</string>
+    <string name="boarding_text">Boarding Text</string>
+    <string name="lorem_ipsum">Lorem ipsum</string>
+    <string name="quarantine_details">বিশেষজ্ঞদের মতে, বাড়িতে রেখে আইসোলেশন সম্ভব নয়। বরং একে হোম কোয়ারেন্টাইন বলাটা অনেক যুক্তিযুক্ত। কোনও ব্যক্তি যখন নিজের বাড়িতেই কোয়ারেন্টাইনের সব নিয়ম মেনে, বাইরের লোকজনের সঙ্গে ওঠা-বসা বন্ধ করে আলাদা থাকেন, তখন তাকে হোম কোয়ারেন্টাইন বলে। কোনও ব্যক্তি করোনাভাইরাসে আক্রান্ত দেশ থেকে ঘুরে এলে, বা রোগীর সংস্পর্শে এলে তার শরীরেও বাসা বাঁধতে পারে কোভিড-১৯। বাসা আদৌ বেঁধেছে কি না বা সে আক্রান্ত কিনা এটা বুঝে নিতেই এই ব্যবস্থা নিতে হয়। এক্ষেত্রেও ন্যূনতম ১৪ দিন ধরে আলাদা থাকার কথা।</string>
+    <string name="isolation_details">আইসোলেশন এর মাধ্যমে সংক্রামক রোগে আক্রান্ত ব্যক্তিদের সুস্থ ব্যক্তিদের থেকে আলদা রাখা হয়। কমপক্ষে ১৪ দিনের মেয়াদে আইসোলেশন চলে। অসুখের গতি-প্রকৃতি দেখে তা বাড়ানোও হয়।</string>
+    <string name="are_you_covid_19_positive">Are You Covid-19 Positive?</string>
+
+</resources>

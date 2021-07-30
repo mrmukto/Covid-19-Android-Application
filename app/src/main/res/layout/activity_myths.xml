@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/WHITE"
+    android:id="@+id/root"
+    tools:context=".MythsActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="90dp">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/mythRecycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <eightbitlab.com.blurview.BlurView
+        android:id="@+id/blurView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:outlineProvider="bounds"
+        app:blurOverlayColor="@color/overlayColor"
+        tools:targetApi="lollipop">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+            <ImageView
+                android:id="@+id/back_button"
+                android:layout_width="22dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="25dp"
+                android:padding="5dp"
+                android:src="@drawable/back_button"
+                android:contentDescription="@string/todo"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="80dp"
+                android:layout_marginRight="80dp"
+                android:text="Myths &amp; Rumors"
+                android:gravity="center"
+                android:fontFamily="@font/nunitosans_black"
+                android:textColor="@color/SS_DarkBlue"
+                android:textSize="22sp"/>
+        </RelativeLayout>
+    </eightbitlab.com.blurview.BlurView>
+
+</RelativeLayout>

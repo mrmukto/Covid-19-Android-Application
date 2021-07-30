@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/hospitalHolder"
+    android:background="@color/WHITE"
+    android:padding="25dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_toStartOf="@id/callHospital">
+        <TextView
+            android:id="@+id/hospitalName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nunitosans_bold"
+            android:textSize="15sp"
+            android:text="@string/what_is_coronavirus"
+            android:textColor="@color/SS_DarkBlue"/>
+        <TextView
+            android:id="@+id/hospitalAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nunitosans_regular"
+            android:textColor="@color/SS_BlueGrey"
+            android:textSize="13sp"
+            android:text="Address will be here"
+            android:paddingTop="5dp"/>
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/callHospital"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="15dp"
+        android:src="@drawable/call_button"
+        android:contentDescription="@string/todo"
+        android:layout_alignParentEnd="true"/>
+</RelativeLayout>

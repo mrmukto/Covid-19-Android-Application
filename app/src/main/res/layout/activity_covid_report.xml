@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/root"
+    android:background="@color/WHITE"
+    tools:context=".CovidReport">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="80dp">
+            <LinearLayout
+                android:id="@+id/bad_report"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:paddingLeft="35dp"
+                android:paddingRight="35dp"
+                android:paddingBottom="15dp"
+                tools:ignore="UseCompoundDrawables">
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:contentDescription="@string/warning"
+                    android:src="@drawable/cancel_enabled"
+                    android:layout_margin="20sp"/>
+
+                <TextView
+                    android:id="@+id/riskText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/you_should_seek_medical_attention"
+                    android:textColor="#FF2D55"
+                    android:fontFamily="sans-serif-medium"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:gravity="center"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/good_report"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:paddingLeft="35dp"
+                android:paddingRight="35dp"
+                android:paddingBottom="15dp"
+                tools:ignore="UseCompoundDrawables">
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:contentDescription="@string/warning"
+                    android:src="@drawable/check_enabled"
+                    android:layout_margin="20sp"/>
+                <TextView
+                    android:id="@+id/safetyText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#00CD98"
+                    android:text="@string/you_should_take_preventive_measures_carefully"
+                    android:gravity="center"
+                    android:fontFamily="@font/nunitosans_semibold"
+                    android:textSize="16sp"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/SSReport"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/SS_DarkBlue"
+                android:text="স্ক্রিনশট তুলুন আর বন্ধুদের সাথে শেয়ার করে জানিয়ে দিন আপনার শারীরিক অবস্থা।\n\n#ঘরে থাকুন, সুস্থ থাকুন\n#Coronavirus\n#COVID19"
+                android:gravity="center"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:paddingBottom="15dp"
+                android:fontFamily="sans-serif-medium"
+                android:textSize="16sp"
+                android:paddingTop="15dp"/>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/coronaHospitals"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/SS_Emergency2"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="0dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="করোনাভাইরাস হাসপাতালের তালিকা"
+                    android:fontFamily="sans-serif-black"
+                    android:textSize="18sp"
+                    android:textColor="@color/SS_DarkBlue"
+                    android:gravity="center"
+                    android:padding="15dp"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/helpLine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="#FFE6E2"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="0dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="IEDCR হেল্পলাইন"
+                    android:fontFamily="sans-serif-black"
+                    android:textSize="18sp"
+                    android:textColor="#FC573B"
+                    android:gravity="center"
+                    android:padding="15dp"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/recheckButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/SS_Emergency"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="0dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginBottom="30dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="আবার চেক করুন"
+                    android:fontFamily="sans-serif-black"
+                    android:textSize="18sp"
+                    android:textColor="#00CD98"
+                    android:gravity="center"
+                    android:padding="15dp"/>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <eightbitlab.com.blurview.BlurView
+        android:id="@+id/blurView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:outlineProvider="bounds"
+        app:blurOverlayColor="@color/overlayColor"
+        tools:targetApi="lollipop">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+            <ImageView
+                android:id="@+id/back_button"
+                android:layout_width="22dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="25dp"
+                android:padding="5dp"
+                android:src="@drawable/back_button"
+                android:contentDescription="@string/todo"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="80dp"
+                android:layout_marginRight="80dp"
+                android:text="COVID Test Report"
+                android:gravity="center"
+                android:fontFamily="@font/nunitosans_black"
+                android:textColor="@color/SS_DarkBlue"
+                android:textSize="22sp"/>
+        </RelativeLayout>
+    </eightbitlab.com.blurview.BlurView>
+</RelativeLayout>

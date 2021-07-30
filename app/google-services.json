@@ -1,0 +1,93 @@
+{
+  "project_info": {
+    "project_number": "228529678650",
+    "firebase_url": "https://covid-19-eb313.firebaseio.com",
+    "project_id": "covid-19-eb313",
+    "storage_bucket": "covid-19-eb313.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:228529678650:android:dfd01d9049d72498fe8803",
+        "android_client_info": {
+          "package_name": "com.shoutlab.coronabd"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "228529678650-gkqh4s2ndnkvhssdgbdakcv543m5l3hc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD7aY2xSrnLCdc4gkoNc_rPCpipawFgXDA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "228529678650-gkqh4s2ndnkvhssdgbdakcv543m5l3hc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:228529678650:android:b744d07025ee7692fe8803",
+        "android_client_info": {
+          "package_name": "com.shoutlab.covid"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "228529678650-8ea3m0i6gpuf41fapoe73kg4c1jkejqa.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.shoutlab.covid",
+            "certificate_hash": "2772da29940fb76e37487ddf38a44d9465334950"
+          }
+        },
+        {
+          "client_id": "228529678650-alfosevv9v0irrnsn8sllg25gkselcsn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.shoutlab.covid",
+            "certificate_hash": "895d8b42f86f615defa92c23f7de96a7e7dc32d3"
+          }
+        },
+        {
+          "client_id": "228529678650-8dp3uobm4kskdhe1pdlrhvgh7i06epo9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.shoutlab.covid",
+            "certificate_hash": "5fe8ea973d7dc9b2d60b3bf762e9e9ea3aeb78cb"
+          }
+        },
+        {
+          "client_id": "228529678650-gkqh4s2ndnkvhssdgbdakcv543m5l3hc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD7aY2xSrnLCdc4gkoNc_rPCpipawFgXDA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "228529678650-gkqh4s2ndnkvhssdgbdakcv543m5l3hc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

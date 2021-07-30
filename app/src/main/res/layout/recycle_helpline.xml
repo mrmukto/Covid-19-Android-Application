@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_120sdp"
+    android:id="@+id/numberHolder"
+    android:gravity="center"
+    android:background="@color/WHITE"
+    android:padding="20dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:layout_toStartOf="@id/callButton">
+        <TextView
+            android:id="@+id/area"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nunitosans_extrabold"
+            android:textSize="16sp"
+            android:text="IEDCR"
+            android:textColor="@color/SS_DarkBlue"/>
+        <TextView
+            android:id="@+id/details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nunitosans_regular"
+            android:textSize="14sp"
+            android:text=""/>
+        <TextView
+            android:id="@+id/mobileNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nunitosans_extrabold"
+            android:textColor="@color/SS_BlueGrey"
+            android:textSize="20sp"
+            android:text="01401184551"/>
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/callButton"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src="@drawable/call_button"
+        android:layout_alignParentEnd="true"
+        android:contentDescription="@string/todo"/>
+</RelativeLayout>

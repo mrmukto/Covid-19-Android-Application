@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/faqHolder"
+    android:background="@color/WHITE"
+    android:padding="25dp">
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nunitosans_extrabold"
+        android:textSize="18sp"
+        android:text="@string/what_is_coronavirus"
+        android:textColor="@color/SS_DarkBlue"/>
+    <TextView
+        android:id="@+id/answer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nunitosans_regular"
+        android:textColor="@color/SS_BlueGrey"
+        android:textSize="15sp"
+        android:text="@string/covid_details"
+        android:paddingTop="5dp"/>
+</LinearLayout>

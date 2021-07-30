@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="15dp"
+    app:cardElevation="3dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        tools:ignore="UselessParent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:padding="10dp"
+                android:layout_margin="10dp"
+                android:src="@drawable/hospital_img"
+                android:contentDescription="@string/todo"/>
+            <ImageView
+                android:id="@+id/close_button"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/close_button"
+                android:contentDescription="@string/todo"/>
+        </RelativeLayout>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/coronaHospitals"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp"
+            app:cardBackgroundColor="@color/SS_Emergency"
+            app:cardElevation="0dp"
+            app:contentPadding="10dp"
+            android:layout_marginBottom="15dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunitosans_black"
+                    android:text="Corona Hospitals"
+                    android:textSize="28sp"
+                    android:textColor="#00CD98"
+                    android:gravity="center"/>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/nearbyHospital"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp"
+            app:cardBackgroundColor="@color/SS_Emergency2"
+            app:cardElevation="0dp"
+            app:contentPadding="10dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunitosans_black"
+                    android:text="Nearby Hospitals"
+                    android:textSize="28sp"
+                    android:textColor="@color/SS_DarkBlue"
+                    android:gravity="center"/>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:fontFamily="@font/nunitosans_regular"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:textSize="25sp"
+            android:textColor="@color/SS_DarkBlueOp22"/>
+    </LinearLayout>
+</RelativeLayout>

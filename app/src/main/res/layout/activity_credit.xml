@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/root"
+    android:background="@color/WHITE"
+    tools:context=".CreditActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:orientation="vertical"
+            android:paddingTop="80dp">
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/developer"
+                android:textColor="@color/colorPrimaryDark"
+                android:gravity="center"
+                android:fontFamily="@font/nunitosans_semibold"
+                android:textSize="20sp"
+                android:padding="5dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:fontFamily="@font/nunitosans_regular"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="Sakhawat Hossain\nand\nMamunur Rashid Mukto"
+                android:gravity="center"
+                android:paddingTop="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+                <ImageView
+                    android:id="@+id/facebookRafat"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:src="@drawable/facebook"
+                    android:padding="5dp"
+                    android:contentDescription="@string/todo"/>
+                <ImageView
+                    android:id="@+id/githubRafat"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:src="@drawable/github"
+                    android:padding="5dp"
+                    android:contentDescription="@string/todo"/>
+                <ImageView
+                    android:id="@+id/websiteRafat"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:src="@drawable/internet"
+                    android:padding="5dp"
+                    android:contentDescription="@string/todo"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="UI/UX Designer"
+                android:textColor="@color/colorPrimaryDark"
+                android:gravity="center"
+                android:fontFamily="@font/nunitosans_semibold"
+                android:textSize="20sp"
+                android:padding="5dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:fontFamily="@font/nunitosans_regular"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="MD Nahid Hasan"
+                android:gravity="center"
+                android:paddingTop="10dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+                <ImageView
+                    android:id="@+id/facebookNahid"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:src="@drawable/facebook"
+                    android:padding="5dp"
+                    android:contentDescription="@string/todo"/>
+                <ImageView
+                    android:id="@+id/dribbleNahid"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:src="@drawable/dribble"
+                    android:padding="5dp"
+                    android:contentDescription="@string/todo"/>
+                <ImageView
+                    android:id="@+id/behanceNahid"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:src="@drawable/behance"
+                    android:padding="5dp"
+                    android:contentDescription="@string/todo"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="App Architecture by"
+                android:textColor="@color/colorPrimaryDark"
+                android:gravity="center"
+                android:fontFamily="@font/nunitosans_semibold"
+                android:textSize="18sp"
+                android:padding="5dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:fontFamily="@font/nunitosans_regular"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="Md Nazibul Islam"
+                android:gravity="center"
+                android:padding="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Content By"
+                android:textColor="@color/colorPrimaryDark"
+                android:gravity="center"
+                android:fontFamily="@font/nunitosans_semibold"
+                android:textSize="20sp"
+                android:padding="5dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:fontFamily="@font/nunitosans_regular"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="Md Shahnewaz Abid"
+                android:gravity="center"
+                android:padding="10dp"/>
+            <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:fontFamily="@font/nunitosans_regular"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="Md Nazibul Islam"
+            android:gravity="center"
+            android:padding="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Honorable Mentions"
+                android:textColor="@color/colorPrimaryDark"
+                android:gravity="center"
+                android:fontFamily="@font/nunitosans_semibold"
+                android:textSize="20sp"
+                android:padding="5dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:fontFamily="@font/nunitosans_regular"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="Fahima Khanam {Supervisor}\nLecturer,CSE,Dept,BUBT"
+                android:gravity="center"
+                android:padding="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:fontFamily="@font/nunitosans_regular"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="Dr.M.Firoz Mridha\nChairman,CSE,Dept,BUBT"
+                android:gravity="center"
+                android:padding="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <eightbitlab.com.blurview.BlurView
+        android:id="@+id/blurView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:outlineProvider="bounds"
+        app:blurOverlayColor="@color/overlayColor"
+        tools:targetApi="lollipop">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+            <ImageView
+                android:id="@+id/back_button"
+                android:layout_width="22dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="25dp"
+                android:padding="5dp"
+                android:src="@drawable/back_button"
+                android:contentDescription="@string/todo"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="80dp"
+                android:layout_marginRight="80dp"
+                android:text="About the Team"
+                android:gravity="center"
+                android:fontFamily="@font/nunitosans_black"
+                android:textColor="@color/SS_DarkBlue"
+                android:textSize="22sp"/>
+        </RelativeLayout>
+    </eightbitlab.com.blurview.BlurView>
+</RelativeLayout>

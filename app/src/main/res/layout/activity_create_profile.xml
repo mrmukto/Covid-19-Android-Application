@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/WHITE"
+    tools:context=".CreateProfileActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/exit_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:text="@string/exit"
+                android:padding="25dp"
+                android:fontFamily="@font/nunitosans_semibold"
+                android:textSize="14sp"
+                android:textColor="@color/SS_BlueGrey"/>
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/back_button"
+                android:layout_width="wrap_content"
+                android:layout_height="?attr/actionBarSize"
+                android:src="@drawable/back_button"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:contentDescription="@string/back_button"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:fontFamily="@font/nunitosans_black"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="25sp"
+                android:text="@string/create_profile"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/full_name"
+                    android:textSize="13sp"
+                    android:textColor="@color/GREY_400"
+                    android:fontFamily="@font/nunitosans_regular" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/star"
+                    android:paddingLeft="1dp"
+                    android:paddingRight="1dp"
+                    android:textSize="13sp"
+                    android:textColor="@color/RED_400"
+                    android:fontFamily="@font/nunitosans_regular" />
+            </LinearLayout>
+            <EditText
+                android:id="@+id/full_name"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:fontFamily="@font/nunitosans_regular"
+                android:textColor="@color/colorPrimaryDark"
+                android:background="@color/WHITE"
+                android:textSize="18sp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:inputType="text"
+                android:maxLines="1"
+                tools:ignore="Autofill,LabelFor" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:background="@color/GREY_200"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="25dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/select_country"
+                    android:textSize="13sp"
+                    android:textColor="@color/GREY_400"
+                    android:fontFamily="@font/nunitosans_regular" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/star"
+                    android:paddingLeft="1dp"
+                    android:paddingRight="1dp"
+                    android:textSize="13sp"
+                    android:textColor="@color/RED_400"
+                    android:fontFamily="@font/nunitosans_regular" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:gravity="center_vertical">
+                <com.hbb20.CountryCodePicker
+                    android:layout_alignParentStart="true"
+                    android:gravity="center_vertical"
+                    android:id="@+id/countryNameHolder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    app:ccp_defaultNameCode="BD"
+                    app:ccp_showFullName="true"
+                    app:ccp_showNameCode="false"
+                    app:ccp_showPhoneCode="false"
+                    app:ccp_autoDetectCountry="true"
+                    app:ccp_countryAutoDetectionPref="SIM_ONLY"
+                    app:ccp_autoDetectLanguage="true"
+                    app:ccp_showArrow="false"
+                    app:ccpDialog_keyboardAutoPopup="true"
+                    app:ccpDialog_allowSearch="true"
+                    app:ccpDialog_showPhoneCode="false"
+                    app:ccpDialog_showFlag="true"
+                    app:ccpDialog_showTitle="true"
+                    tools:ignore="RtlSymmetry" />
+            </RelativeLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:background="@color/GREY_200"/>
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/mobile_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:text="@string/mobile_number"
+                android:textColor="@color/GREY_400"
+                android:fontFamily="@font/nunitosans_regular"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="25dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/are_you_covid_19_positive"
+                    android:textSize="13sp"
+                    android:textColor="@color/GREY_400"
+                    android:fontFamily="@font/nunitosans_regular" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/star"
+                    android:paddingLeft="1dp"
+                    android:paddingRight="1dp"
+                    android:textSize="13sp"
+                    android:textColor="@color/RED_400"
+                    android:fontFamily="@font/nunitosans_regular" />
+            </LinearLayout>
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:background="@color/WHITE"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                 >
+
+
+                <Spinner
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/spinner"/>
+            </RelativeLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:background="@color/GREY_200"/>
+
+
+            <RelativeLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:gravity="center_vertical">
+                <com.hbb20.CountryCodePicker
+                    android:layout_alignParentStart="true"
+                    android:gravity="center_vertical"
+                    android:id="@+id/countryCodeHolder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    app:ccp_defaultNameCode="BD"
+                    app:ccp_showNameCode="true"
+                    app:ccp_showPhoneCode="true"
+                    app:ccp_autoDetectCountry="true"
+                    app:ccp_countryAutoDetectionPref="SIM_ONLY"
+                    app:ccp_autoDetectLanguage="true"
+                    app:ccp_showArrow="false"
+                    app:ccpDialog_keyboardAutoPopup="true"
+                    app:ccpDialog_allowSearch="true"
+                    app:ccpDialog_showPhoneCode="true"
+                    app:ccpDialog_showFlag="true"
+                    app:ccpDialog_showTitle="true"
+                    app:ccp_hintExampleNumber="true"
+                    app:ccp_hintExampleNumberType="MOBILE"/>
+
+                <EditText
+                    android:layout_toEndOf="@id/countryCodeHolder"
+                    android:layout_toStartOf="@id/mobile_valid_sign"
+                    android:id="@+id/mobile_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:maxLines="1"
+                    android:inputType="phone"
+                    android:background="@color/WHITE"
+                    android:fontFamily="@font/nunitosans_regular"
+                    android:importantForAutofill="no"
+                    tools:ignore="LabelFor"/>
+
+                <ImageView
+                    android:id="@+id/mobile_valid_sign"
+                    android:layout_alignParentEnd="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/check_green"
+                    android:contentDescription="@string/checkbox"/>
+            </RelativeLayout>
+            <TextView
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:background="@color/GREY_200"/>
+
+            <TextView
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"/>
+
+            <TextView
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/address"
+                android:textSize="13sp"
+                android:textColor="@color/GREY_400"
+                android:fontFamily="@font/nunitosans_regular"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"/>
+            <EditText
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:fontFamily="@font/nunitosans_regular"
+                android:textColor="@color/colorPrimaryDark"
+                android:background="@color/WHITE"
+                android:textSize="18sp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:inputType="text"
+                android:maxLines="1"
+                tools:ignore="Autofill,LabelFor" />
+            <TextView
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:background="@color/GREY_200"/>
+
+            <Button
+                android:id="@+id/register_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="25dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/register_disabled_button"
+                android:textColor="@color/WHITE"
+                android:text="@string/register"
+                android:enabled="false"/>
+
+            <TextView
+                android:id="@+id/agreement"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/agreement"
+                android:fontFamily="@font/nunitosans_regular"
+                android:paddingTop="20dp"
+                android:paddingBottom="30dp"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

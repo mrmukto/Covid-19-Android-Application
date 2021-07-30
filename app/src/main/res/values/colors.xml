@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#282F39</color>
+    <color name="colorAccent">#2C3E50</color>
+
+    <color name="WHITE">#FFFFFF</color>
+
+    <color name="DISABLED">#DADEE3</color>
+    <color name="GREY_200">#EEEEEE</color>
+    <color name="GREY_400">#BDBDBD</color>
+
+    <color name="BLUE">#3369FF</color>
+
+    <color name="BLUE_GREY">#78909C</color>
+
+    <color name="GREEN_400">#66BB6A</color>
+
+    <color name="RED_400">#EF5350</color>
+
+
+
+    <color name="SS_DarkBlue">#2C3E50</color>
+    <color name="SS_DarkBlueOp30">#4D2C3E50</color>
+    <color name="SS_DarkBlueOp22">#382C3E50</color>
+    <color name="SS_Orange">#FF8E34</color>
+    <color name="overlayColor">#B3F8F8F8</color>
+    <color name="overlayColorVideo">#33FFFFFF</color>
+    <color name="SS_Pink">#E83F63</color>
+    <color name="SS_Violet">#3E3373</color>
+    <color name="SS_Green">#00CD98</color>
+    <color name="SS_Blue">#3498DB</color>
+    <color name="SS_LightViolet">#9B59B6</color>
+    <color name="SS_RED">#FF2D55</color>
+    <color name="SS_Blue1">#147EFB</color>
+    <color name="SS_Blue2">#5D568C</color>
+    <color name="SS_Grey">#F8F8F8</color>
+    <color name="SS_BlueGrey">#858997</color>
+    <color name="SS_Black1">#141821</color>
+    <color name="SS_ProgressBackground">#EEEFF3</color>
+    <color name="SS_ProgressGreen">#53D769</color>
+    <color name="SS_ProgressRed">#FC3158</color>
+    <color name="SS_ProgressYellow">#FECB2E</color>
+    <color name="SS_SearchBoxOp24">#3D8E8E93</color>
+    <color name="SS_faqBG">#F4F5F7</color>
+    <color name="SS_Emergency">#3300CD98</color>
+    <color name="SS_Emergency2">#33147EFB</color>
+    <color name="SS_PinkSplash">#FF2D55</color>
+
+    <color name="SS_Stat1">#0200AF</color>
+    <color name="SS_Stat2">#5351FB</color>
+    <color name="SS_Stat3">#00CD98</color>
+    <color name="SS_Stat4">#FF006D</color>
+    <color name="SS_Stat5">#F6B900</color>
+    <color name="buttoncolor">#3E8C7D</color>
+    <color name="SS_Stat6">#FF7148</color>
+</resources>
